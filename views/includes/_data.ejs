@@ -1,0 +1,12 @@
+<% for(i=0;i<data.length;i++) { %>
+ 
+    <tr>
+      <td><%= i+1 %></td>
+      <td><%= data[i].name %></td>
+      <td>$<%= data[i].last %></td>
+      <td>$<%=  data[i].buy %>/$<%=  data[0].sell %></td>
+      <td><%= data[i].volume%></td>
+      <td><%= data[i].base_unit %></td>
+    </tr>
+
+  <% } %>
